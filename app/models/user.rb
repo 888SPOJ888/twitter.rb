@@ -34,10 +34,5 @@ class User < ApplicationRecord
       update_attribute(:remember_digest, nil)
     end
 
-    def feed 
-      Tweet.where("user_id = ?", id)
-
-
-    end
-
+    
 end
